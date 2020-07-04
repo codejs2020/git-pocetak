@@ -1,0 +1,88 @@
+<!-- * postavlja random boju pozadine na body ( document.body.style.color='red'; ovako se postavlja boja)  **randomPozadina** -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pozadina</title>
+</head>
+<body>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            background: #e74c3c;
+            font-family: 'Montserrat';
+        }
+
+        .color{
+            margin-top: 300px;
+            text-align: center;
+        }
+
+        #hex{
+            display: block;
+            color: white;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        .color button{
+            background: none;
+            outline: none;
+            color: white;
+            border: 3px solid white;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+    </style>
+
+
+
+
+
+    <div class = 'color'>
+
+        <span id="hex">#74c3c</span>
+        <button onclick="randomPozadina()">Random Pozadina</button>
+
+    </div>
+
+
+
+
+    <script>
+
+        function randomPozadina() {
+            var simbols,color;
+            symbols = '0123456789ABCDEF';
+
+            color = '#'
+
+            for(var i=0; i<6; i++){
+                color = color + symbols[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.background = color;
+            document.getElementById('hex').innerHTML = color
+        }
+
+    </script>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

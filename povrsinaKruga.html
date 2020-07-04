@@ -1,0 +1,43 @@
+<!-- * računa površinu kruga **povrsinaKruga** -->
+
+
+<script>
+    function povrsinaKruga(poluprecnik){
+        let povrsina = Math.PI * (poluprecnik * poluprecnik);
+        console.log(povrsina);
+        console.log(Math.round(povrsina*100)/100);
+    }
+    povrsinaKruga(5);
+    povrsinaKruga(12);
+    povrsinaKruga(100);
+
+///////////////////////////////////////////////////////////////////
+
+    let povrsinaKruga2=(poluprecnik)=>Math.PI*(poluprecnik*poluprecnik);
+    console.log(povrsinaKruga2(5));
+    console.log(povrsinaKruga2(12));
+    console.log(povrsinaKruga2(100));
+
+///////////////////////////////////////////////////////////////////
+
+    function povrsinaKruga3(poluprecnik){
+        return Math.PI*(poluprecnik*poluprecnik);
+    }
+    console.log(povrsinaKruga3(5));
+    console.log(povrsinaKruga3(12));
+    console.log(povrsinaKruga3(100));
+
+///////////////////////////////////////////////////////////////////
+
+    let povrsinaKruga4=function(poluprecnik){
+        return Math.PI*(poluprecnik*poluprecnik);
+    }
+    console.log(povrsinaKruga4(5));
+    console.log(povrsinaKruga4(12));
+    console.log(povrsinaKruga4(100));
+
+</script>
+
+
+
+
