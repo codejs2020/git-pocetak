@@ -1,0 +1,37 @@
+<!-- * vraća poruku: "Dobar dan", "Dobro jutro" ili "Dobro veče" u zavisnosti od toga kad je pokrenuta **pozdrav** -->
+
+
+<script>
+    function pozdrav(){
+        let sat = new Date().getHours();
+
+        if (sat<10) {
+            console.log('Dobro jutro!');
+        }else if (sat>17) {
+            console.log('Dobro vece!');
+        }
+        else{
+            console.log('Dobar dan!');
+        }
+    }
+    pozdrav();
+
+///////////////////////////////////////////////////////
+
+    function pozdrav2(){
+        let sat = new Date().getHours();
+
+        if(sat<10){
+            return 'Dobro jutro!';
+        }                                   //kod za pozdrav2 ne radi pa ko zna gde je gdeska neka pomogne :)
+        else if(sat>17){
+            return 'Dobro vece!';
+        }
+        return 'Dobar dan';
+    }
+    console.log(pozdrav2)
+
+
+
+</script>
+
