@@ -1,0 +1,26 @@
+{
+  "name": "git-pocetak",
+  "version": "1.0.0",
+  "description": "git clone PUTANJA \r git add .\r git commit\r git commit -m \"PORUKA\"\r git push\r git pull\r git log\r git status",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint **.js",
+    "fix": "eslint **.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codejs2020/git-pocetak.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codejs2020/git-pocetak/issues"
+  },
+  "homepage": "https://github.com/codejs2020/git-pocetak#readme",
+  "dependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-standard": "^14.1.1"
+  }
+}
