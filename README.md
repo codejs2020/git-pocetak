@@ -9,3 +9,8 @@ git push
 git pull
 git log
 git status
+
+
+# Rad na grani jedan
+git branch IME
+git checkout IME
