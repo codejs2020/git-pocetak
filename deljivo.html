@@ -1,0 +1,45 @@
+<!-- * vraća da li je 1. broj deljiv sa drugim **deljivo** -->
+
+
+<script>
+    function deljivo(num1, num2){
+        if (num1%num2 !=0) {
+            console.log(num1 +' broj nije deljiv sa ' + num2);
+        } else {
+            console.log(num1 +' broj je deljiv sa ' + num2);
+        }
+    }
+    deljivo(10,5)
+
+/////////////////////////////////////////////////////////////////////
+
+    function deljivo2(num1,num2){
+        if(num1%num2 !=0){
+            return num1 +' broj nije deljiv sa ' + num2;
+        } else {
+            return num1 +' broj je deljiv sa ' + num2
+        }
+    }
+    console.log(deljivo2(10,5));
+    console.log(deljivo2(10,2));
+    console.log(deljivo2(10,3));
+    console.log(deljivo2(10,16));
+
+//////////////////////////////////////////////////////////////////////
+
+    let deljivo3=(num1,num2)=>{
+        if(num1%num2 !=0){
+            return num1 +' broj nije deljiv sa ' + num2;
+        }
+        else{
+            return num1 +' broj je deljiv sa ' + num2
+        }
+    }
+    
+    console.log(deljivo2(10,5));
+    console.log(deljivo2(10,2));
+    console.log(deljivo2(10,3));
+    console.log(deljivo2(10,16));
+
+</script>
+
