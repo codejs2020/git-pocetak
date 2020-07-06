@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function zbir(a,b){
+            return a+b
+        }
+
+        function razlika(a,b){
+            return a-b
+        }
+
+        function ostatak(a,b){
+            return a%b
+        }
+
+        function pozdrav(){
+
+            let dan = new Date();
+            let vreme = dan.getHours();
+            if (vreme>6 && vreme <19){
+                return "dobar dan"
+            }
+            else{
+                return "dobro vece"
+            }
+        }
+
+        let deljivo = (a,b) => {
+            if (a%b === 0) {
+                return `${a} je deljiv sa ${b}`
+            }
+            else{
+                return `${a} nije deljiv sa ${b}`
+            }
+        }
+
+        let fizzbuzz = (broj) => {
+            if (broj%3 === 0 && broj%5 ===0){
+                return "fizzBuzz"
+            }
+            else if(broj%3===0){
+                return "fizz"
+            }
+            else if(broj%5===0){
+                return "buzz"
+            }
+
+            else{
+                return broj
+            }
+        }
+
+        let vracaVeci = (a,b) => {
+            if(a>b){
+                return a
+            }
+            else if(b>a){
+                return b
+            }
+            else{
+                return "jednaki su"
+            }
+        }
+
+        let ponovi = (broj) => {
+            return '*' * broj
+        }
+
+        let ponoviString = (tekst,brojPonavljanja) =>{
+
+            return tekst * brojPonavljanja 
+        }
+
+        let povrsinaPravouganika = (a,b) => {
+            return a*b
+        }
+
+        let povrsinaKvadrata = (a) => a*a ;
+
+        let povrsinaKruga = (r) => r*r*3.14;
+
+        let obimKruga = (r) => 2*r*3.14;
+
+        let randomBoja = () => {
+            boja = "#"
+            for(let i=1;i<6;i++){
+                boja+=Math.ceil(Math.random()*10);
+            }
+            return `document.body.style.backgroundColor='${boja}'`
+        } 
+
+        let dinariUEvre= (din,kurs=118) =>{
+            return din/kurs
+        }
+
+
+        let evriUDinare = (eur,kurs=118) => {
+            return eur*kurs
+        }
+
+
+       let napraviTabelu = (redovi,kolone) => {
+
+           let tabela = "<table>";
+           let red = "<tr>"
+           for(let i=0;i<kolone;i++){
+               red+="<td></td>";
+           }
+           red+="</tr>"
+           for (let i=0;i<redovi;i++){
+               red+=red;
+           }
+           tabela+=red;
+           tabela+="</table>";
+           console.log(tabela);
+       }
+
+       let vratiNajveci = (a,b,c) => {
+           if (a>b && a>c){
+               return a
+           }
+           else if (b>a && b>c){
+               return b
+           }
+           else{
+               return c
+           }
+       }
+
+
+       let formatiraj = (sekunde) => {
+
+           sati = sekunde/3600
+           minuti = sekunde/60
+           ostatak = sekunde%60
+
+           return `${sati}:${minuti}:${ostatak}`
+       }
+
+
+       let formatiraj2 = (sekunde) => {
+
+           minuti = sekunde/60
+           return `${minuti} minuta`
+       }
+
+    </script>
+    
+</body>
+</html>
