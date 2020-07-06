@@ -1,0 +1,40 @@
+<!-- * konvertuje dinare u evre **rsd2eur -->
+
+
+<script>
+
+    function rsd2eur(rsd){
+        eur = rsd/120;
+        console.log(eur);
+    }
+    rsd2eur(120)
+
+////////////////////////////////////////
+
+    function rsd2eur2(eur){
+        return 120/eur;
+    }
+    console.log(rsd2eur2(120))
+
+////////////////////////////////////////
+
+    let rsd2eur3 = function(rsd){
+        return rsd/120;
+    }
+    console.log(rsd2eur3(1200))
+
+///////////////////////////////////////
+
+    let rsd2eur4=(rsd)=>{
+        return rsd/120
+    }
+    console.log(rsd2eur4(12000))
+
+//////////////////////////////////////
+ 
+    let rsd2eur5=(rsd)=> rsd/120;
+    console.log(rsd2eur5(1200))
+
+</script>
+
+

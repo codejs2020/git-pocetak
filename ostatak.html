@@ -1,0 +1,30 @@
+<!-- * vraća ostatak pri deljenju 2 broja **ostatak** -->
+
+
+<script>
+    function ostatak(num1,num2){
+        console.log(num1%num2);
+    }
+    ostatak(8,3);
+    ostatak(10,5);
+    ostatak(8,2);
+
+//////////////////////////////////
+
+    let ostatak2=(num1,num2)=>num1%num2;
+    console.log(ostatak2(8,3));
+    console.log(ostatak2(10,5));
+    console.log(ostatak2(8,2));
+
+//////////////////////////////////
+
+    let ostatak3=function(num1,num2){
+        return num1%num2;
+    }
+    console.log(ostatak3(8,3));
+    console.log(ostatak3(10,5));
+    console.log(ostatak3(8,2));
+
+
+</script>
+
