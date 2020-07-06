@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let kursEuro = 117.57
+        let kursDinar = 0.0085
+
+        function eur2rsd(euro){
+            return euro*kursEuro
+        }
+
+        function rsd2eur(dinar){
+            return dinar*kursDinar
+        }
+        console.log(eur2rsd(10))
+        console.log(eur2rsd(20))
+        console.log(rsd2eur(200))
+        console.log(rsd2eur(500))
+
+    </script>
+</body>
+</html>

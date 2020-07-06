@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        <!--Nisam znao ove funkcije naravno. Imao sam ideju ali sam morao guglati kako da konvertujem u string pa posle da split u array-->
+
+       function unazad(broj){
+           return (
+              parseFloat ( 
+                broj
+               .toString()
+               .split('')
+               .reverse()
+               .join('')
+              )
+           )
+       }
+       console.log(unazad(548))
+       console.log(unazad(671))
+
+    </script>
+</body>
+</html>
